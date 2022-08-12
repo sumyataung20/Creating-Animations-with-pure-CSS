@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      perspective: 600px;
+    }
+    body {
+      /* perspective: 600px; */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 500px;
+      background-color: #f4f4f4;
+    }
+
+    .D1 {
+      width: 250px;
+      height: 100px;
+      background: linear-gradient(black, silver);
+      box-shadow: -5px 0 10px rgba(0, 0, 0, 0.7);
+
+      padding: 10px;
+      position: relative;
+    }
+
+    .D2 {
+      width: 200px;
+      height: 100px;
+      background: linear-gradient(black, silver);
+      border: 1px solid black;
+
+      transform: rotateX(50deg);
+
+      padding: 50px;
+      position: absolute;
+      left: -10px;
+      top: -95%;
+
+      z-index: 1;
+    }
+
+    .D3 {
+      width: 40px;
+      height: 100px;
+
+      background-color: beige;
+      border: 1px solid black;
+      position: absolute;
+      left: 180px;
+      top: 20px;
+
+      transition: all 2s;
+      transform: rotateY(50deg);
+      /* transform-origin: right;
+      top: 0;
+      left: 130px; */
+    }
+
+    .D4 {
+      width: 40px;
+      height: 100px;
+
+      background-color: beige;
+      border: 1px solid black;
+      position: absolute;
+
+      right: 320px;
+      top: 20px;
+      transition: all 2s;
+      /* transform: rotateY(0deg); */
+      transform-origin: left;
+    }
+
+    .D3:hover {
+      transform: rotateY(45deg);
+      /* perspective: 100px; */
+    }
+
+    .D4:hover {
+      transform: rotateY(-45deg);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="D1">Div1</div>
+      <div class="D2">Div2</div>
+      <div class="D3">Div3</div>
+      <div class="D4">Div4</div>
+    </div>
+  </body>
+</html>

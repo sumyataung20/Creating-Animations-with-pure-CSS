@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform with Rotate</title>
+  </head>
+
+  <style>
+    .container {
+      width: 1000px;
+      background: grey;
+    }
+
+    .container .move {
+      width: 150px;
+      height: 60px;
+      background: red;
+      color: white;
+      font-size: 20px;
+      margin: 20px 0;
+
+      text-align: center;
+      line-height: 60px;
+    }
+
+    #rotate:hover {
+      transform: rotate(45deg);
+    }
+
+    #rotatex:hover {
+      transform: rotateX(45deg);
+    }
+
+    #rotatey:hover {
+      transform: rotateY(60deg);
+    }
+
+    img {
+      width: 300px;
+      display: block;
+      margin: auto;
+      transition: transform 2s;
+    }
+
+    img:hover {
+      /* transform: rotate(45deg); */
+      /* transform: rotate(90deg); */
+      /* transform: rotateX(90deg); */
+      /* transform: rotateY(90deg); */
+
+      /* transform: rotate(1turn); */
+      transform: rotateY(45deg);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div id="rotate" class="move">Rotate Me</div>
+    </div>
+
+    <div class="container">
+      <div id="rotatex" class="move">Rotate X</div>
+    </div>
+
+    <div class="container">
+      <div id="rotatey" class="move">Rotate Y</div>
+    </div>
+
+    <hr />
+
+    <img src="./img/dog.jpg" alt="" />
+  </body>
+</html>

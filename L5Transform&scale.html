@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform & Scale</title>
+  </head>
+  <style>
+    .container {
+      width: 1000px;
+      background: grey;
+    }
+
+    .container .move {
+      width: 150px;
+      height: 60px;
+      background: red;
+      color: white;
+      font-size: 20px;
+
+      margin: 2px 0;
+
+      text-align: center;
+      line-height: 60px;
+    }
+
+    #scale:hover {
+      transform: scale(1, 2);
+    }
+
+    #scalexy:hover {
+      transform: scale(2, 1);
+    }
+
+    #scalex:hover {
+      transform: scaleX(0.5);
+    }
+
+    #scaley:hover {
+      transform: scaleY(0.5);
+    }
+
+    img {
+      width: 300px;
+
+      display: block;
+      margin: auto;
+    }
+
+    img:hover {
+      /* transform: scale(2); */
+      /* transform: scale(2, 4); */
+      /* transform: scaleX(2); */
+      transform: scaleY(3);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div id="scale" class="move">Scale Me</div>
+    </div>
+
+    <div class="container">
+      <div id="scalexy" class="move">Scale XY</div>
+    </div>
+
+    <div class="container">
+      <div id="scalex" class="move">Scale X</div>
+    </div>
+
+    <div class="container">
+      <div id="scaley" class="move">Scale Y</div>
+    </div>
+
+    <hr />
+
+    <div>
+      <img src="./img/dog.jpg" alt="" />
+    </div>
+  </body>
+</html>

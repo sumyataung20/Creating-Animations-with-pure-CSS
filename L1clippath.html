@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .square {
+      width: 100px;
+      height: 100px;
+      background-color: steelblue;
+    }
+
+    .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: steelblue;
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 100px solid red;
+    }
+
+    .squareshape {
+      width: 100px;
+      height: 100px;
+      background: steelblue;
+      float: left;
+      margin-right: 20px;
+    }
+
+    .circleshape{
+        width: 100px;
+        height: 100px;
+        background: steelblue;
+
+        clip-path: circle(50%);
+        shape-outside: circle(50%);
+        float: left;
+        margin-right:20px;
+    }
+
+    .ellipseshape{
+        width:100px;
+        height:100px;
+        background: steelblue;
+
+        clip-path: ellipse(50% 70%);
+        shape-outside: ellipse(50% 70%);
+        float: left;
+        margin-right: 20px
+       }
+
+       .polygonshape{
+           width:100px;
+           height:100px;
+           background: steelblue;
+           clip-path: polygon(0% 1%, 99% 1%, 100% 20%, 57% 22%, 60% 99%, 44% 100%, 34% 22%, 0% 22%);
+           shape-outside:polygon(0% 1%, 99% 1%, 100% 20%, 57% 22%, 60% 99%, 44% 100%, 34% 22%, 0% 22%);
+
+           float:left;
+           margin-right:20px;
+       }
+
+       .polygonshape2{
+           width:100px;
+           height:100px;
+           background: steelblue;
+           clip-path: polygon(0% 0%, 33% 100%, 63% 100%, 100% 0%, 73% 1%, 48% 75%, 26% 1%);
+           shape-outside:  polygon(0% 0%, 33% 100%, 63% 100%, 100% 0%, 73% 1%, 48% 75%, 26% 1%);
+           float:left;
+           margin-right:20px;
+       }
+
+
+
+          
+
+
+       
+  </style>
+
+  
+    <div class="square">square</div>
+    <hr />
+    <div class="circle">circle</div>
+    <hr />
+    <div class="triangle">triangle</div>
+    <hr />
+
+    <div>
+      <div class="squareshape"></div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis qui
+        aperiam beatae doloremque laudantium, debitis optio quia ipsam nihil
+        amet fugit vel aliquam eaque totam cumque ab dolore nemo tempore
+        repellat corporis. Est molestias voluptatum commodi tempora in unde
+        quibusdam laborum culpa. Nisi voluptas quam nemo eius! Rerum minima
+        perspiciatis, molestiae consectetur a et quae laudantium tenetur ipsa.
+        Voluptatum debitis incidunt ea quaerat excepturi maiores eius animi
+        exercitationem assumenda consequatur facilis possimus ratione laborum
+        error officia cupiditate quas aliquam aspernatur reprehenderit officiis,
+        architecto esse. Totam animi omnis nobis quos ratione tenetur ea
+        delectus sunt porro velit quis, enim impedit quod est fugiat blanditiis
+        atque dolorum alias veritatis at dignissimos labore. Quasi, commodi.
+        Rerum rem minima sit est ipsam amet dolor voluptate ipsum nemo quas
+        architecto possimus ex veniam, repellat necessitatibus qui modi harum
+        quae inventore sapiente pariatur! Rerum blanditiis, odio pariatur nihil
+        deleniti repudiandae delectus numquam vel dolore consectetur, animi
+        asperiores neque ducimus doloribus soluta veniam? Velit perspiciatis
+        ratione quod reprehenderit qui quasi unde assumenda pariatur
+        consequuntur repellendus autem, nulla molestiae rem perferendis nostrum
+        maxime, vel, ab blanditiis. Debitis iure quis atque illo, sed laboriosam
+        enim saepe nihil mollitia molestiae magnam recusandae dolorum architecto
+        deleniti eius ea. Corporis, maiores atque.
+      </p>
+    </div>
+<hr/>
+
+<div>
+    <div class="circleshape"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis qui
+      aperiam beatae doloremque laudantium, debitis optio quia ipsam nihil
+      amet fugit vel aliquam eaque totam cumque ab dolore nemo tempore
+      repellat corporis. Est molestias voluptatum commodi tempora in unde
+      quibusdam laborum culpa. Nisi voluptas quam nemo eius! Rerum minima
+      perspiciatis, molestiae consectetur a et quae laudantium tenetur ipsa.
+      Voluptatum debitis incidunt ea quaerat excepturi maiores eius animi
+      exercitationem assumenda consequatur facilis possimus ratione laborum
+      error officia cupiditate quas aliquam aspernatur reprehenderit officiis,
+      architecto esse. Totam animi omnis nobis quos ratione tenetur ea
+      delectus sunt porro velit quis, enim impedit quod est fugiat blanditiis
+      atque dolorum alias veritatis at dignissimos labore. Quasi, commodi.
+      Rerum rem minima sit est ipsam amet dolor voluptate ipsum nemo quas
+      architecto possimus ex veniam, repellat necessitatibus qui modi harum
+      quae inventore sapiente pariatur! Rerum blanditiis, odio pariatur nihil
+      deleniti repudiandae delectus numquam vel dolore consectetur, animi
+      asperiores neque ducimus doloribus soluta veniam? Velit perspiciatis
+      ratione quod reprehenderit qui quasi unde assumenda pariatur
+      consequuntur repellendus autem, nulla molestiae rem perferendis nostrum
+      maxime, vel, ab blanditiis. Debitis iure quis atque illo, sed laboriosam
+      enim saepe nihil mollitia molestiae magnam recusandae dolorum architecto
+      deleniti eius ea. Corporis, maiores atque.
+    </p>
+  </div>
+  <hr/>
+  <div>
+    <div class="ellipseshape"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis qui
+      aperiam beatae doloremque laudantium, debitis optio quia ipsam nihil
+      amet fugit vel aliquam eaque totam cumque ab dolore nemo tempore
+      repellat corporis. Est molestias voluptatum commodi tempora in unde
+      quibusdam laborum culpa. Nisi voluptas quam nemo eius! Rerum minima
+      perspiciatis, molestiae consectetur a et quae laudantium tenetur ipsa.
+      Voluptatum debitis incidunt ea quaerat excepturi maiores eius animi
+      exercitationem assumenda consequatur facilis possimus ratione laborum
+      error officia cupiditate quas aliquam aspernatur reprehenderit officiis,
+      architecto esse. Totam animi omnis nobis quos ratione tenetur ea
+      delectus sunt porro velit quis, enim impedit quod est fugiat blanditiis
+      atque dolorum alias veritatis at dignissimos labore. Quasi, commodi.
+      Rerum rem minima sit est ipsam amet dolor voluptate ipsum nemo quas
+      architecto possimus ex veniam, repellat necessitatibus qui modi harum
+      quae inventore sapiente pariatur! Rerum blanditiis, odio pariatur nihil
+      deleniti repudiandae delectus numquam vel dolore consectetur, animi
+      asperiores neque ducimus doloribus soluta veniam? Velit perspiciatis
+      ratione quod reprehenderit qui quasi unde assumenda pariatur
+      consequuntur repellendus autem, nulla molestiae rem perferendis nostrum
+      maxime, vel, ab blanditiis. Debitis iure quis atque illo, sed laboriosam
+      enim saepe nihil mollitia molestiae magnam recusandae dolorum architecto
+      deleniti eius ea. Corporis, maiores atque.
+    </p>
+  </div>
+  <hr/>
+
+  <div>
+    <div class="polygonshape"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis qui
+      aperiam beatae doloremque laudantium, debitis optio quia ipsam nihil
+      amet fugit vel aliquam eaque totam cumque ab dolore nemo tempore
+      repellat corporis. Est molestias voluptatum commodi tempora in unde
+      quibusdam laborum culpa. Nisi voluptas quam nemo eius! Rerum minima
+      perspiciatis, molestiae consectetur a et quae laudantium tenetur ipsa.
+      Voluptatum debitis incidunt ea quaerat excepturi maiores eius animi
+      exercitationem assumenda consequatur facilis possimus ratione laborum
+      error officia cupiditate quas aliquam aspernatur reprehenderit officiis,
+      architecto esse. Totam animi omnis nobis quos ratione tenetur ea
+      delectus sunt porro velit quis, enim impedit quod est fugiat blanditiis
+      atque dolorum alias veritatis at dignissimos labore. Quasi, commodi.
+      Rerum rem minima sit est ipsam amet dolor voluptate ipsum nemo quas
+      architecto possimus ex veniam, repellat necessitatibus qui modi harum
+      quae inventore sapiente pariatur! Rerum blanditiis, odio pariatur nihil
+      deleniti repudiandae delectus numquam vel dolore consectetur, animi
+      asperiores neque ducimus doloribus soluta veniam? Velit perspiciatis
+      ratione quod reprehenderit qui quasi unde assumenda pariatur
+      consequuntur repellendus autem, nulla molestiae rem perferendis nostrum
+      maxime, vel, ab blanditiis. Debitis iure quis atque illo, sed laboriosam
+      enim saepe nihil mollitia molestiae magnam recusandae dolorum architecto
+      deleniti eius ea. Corporis, maiores atque.
+    </p>
+  </div>
+  <hr/>
+  <div>
+    <div class="polygonshape2"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis qui
+      aperiam beatae doloremque laudantium, debitis optio quia ipsam nihil
+      amet fugit vel aliquam eaque totam cumque ab dolore nemo tempore
+      repellat corporis. Est molestias voluptatum commodi tempora in unde
+      quibusdam laborum culpa. Nisi voluptas quam nemo eius! Rerum minima
+      perspiciatis, molestiae consectetur a et quae laudantium tenetur ipsa.
+      Voluptatum debitis incidunt ea quaerat excepturi maiores eius animi
+      exercitationem assumenda consequatur facilis possimus ratione laborum
+      error officia cupiditate quas aliquam aspernatur reprehenderit officiis,
+      architecto esse. Totam animi omnis nobis quos ratione tenetur ea
+      delectus sunt porro velit quis, enim impedit quod est fugiat blanditiis
+      atque dolorum alias veritatis at dignissimos labore. Quasi, commodi.
+      Rerum rem minima sit est ipsam amet dolor voluptate ipsum nemo quas
+      architecto possimus ex veniam, repellat necessitatibus qui modi harum
+      quae inventore sapiente pariatur! Rerum blanditiis, odio pariatur nihil
+      deleniti repudiandae delectus numquam vel dolore consectetur, animi
+      asperiores neque ducimus doloribus soluta veniam? Velit perspiciatis
+      ratione quod reprehenderit qui quasi unde assumenda pariatur
+      consequuntur repellendus autem, nulla molestiae rem perferendis nostrum
+      maxime, vel, ab blanditiis. Debitis iure quis atque illo, sed laboriosam
+      enim saepe nihil mollitia molestiae magnam recusandae dolorum architecto
+      deleniti eius ea. Corporis, maiores atque.
+    </p>
+  </div>
+  <hr/>
+  
+  </body>
+</html>

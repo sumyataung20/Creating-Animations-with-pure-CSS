@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style type="text/css">
+    .container {
+      width: 1000px;
+      background: grey;
+    }
+
+    .container .square {
+      width: 150px;
+      height: 60px;
+      background: red;
+      color: #fff;
+      font-size: 20px;
+      padding: 10px 0;
+      margin: 20px 0;
+
+      text-align: center;
+      line-height: 60px;
+    }
+
+    #translate:hover {
+      transform: translate(300px);
+    }
+
+    #translatex:hover {
+      transform: translateX(-100px);
+    }
+
+    #translatey:hover {
+      transform: translateY(-80px);
+    }
+
+    #translatexy:hover {
+      transform: translate(-100px, -100px);
+    }
+
+    img {
+      width: 300px;
+
+      display: block;
+      margin: auto;
+
+      transition: transform 1s;
+    }
+
+    img:hover {
+      /* transform: translate(200px); */
+      /* transform: translate(-500px); */
+      /* transform: translate(-100%); */
+
+      /* transform: translate(-100%, 50%); */
+
+      transform: translateX(100%) translateY(-100%);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div id="translate" class="square">Translate Me</div>
+    </div>
+
+    <div class="container">
+      <div id="translatex" class="square">Translate X</div>
+    </div>
+
+    <div class="container">
+      <div id="translatey" class="square">Translate Y</div>
+    </div>
+
+    <div class="container">
+      <div id="translatexy" class="square">Translate XY</div>
+    </div>
+    <hr />
+
+    <div>
+      <img src="./img/dog.jpg" alt="dog" />
+    </div>
+  </body>
+</html>

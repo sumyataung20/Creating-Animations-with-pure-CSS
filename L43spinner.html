@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinner by CSS</title>
+    <style type="text/css">
+
+        body{
+    
+            height: 100vh;
+            background-color: #000;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+    }
+
+    .spinnerone, .spinnertwo, .spinnerthree{
+
+        width: 100px;
+        height: 100px;
+        /* background-color: orange; */
+        border-radius: 50%;
+        border: 15px solid #f1f1f1;
+    }
+      
+    .spinnerone{
+        border-top: 15px solid steelblue;
+
+        animation: myspinner 2s linear infinite;
+
+    }
+
+
+    .spinnertwo{
+
+        border-top: 15px solid steelblue;
+        border-bottom: 15px solid deepskyblue;
+
+        animation: myspinner 2s linear infinite;
+
+    }
+
+    .spinnerthree{
+        border-top: 15px solid pink;
+        border-left: 15px solid red;
+
+        animation: myspinner 2s linear infinite;
+    }
+
+    @keyframes myspinner{
+        from{
+            transform: rotate(0deg);
+        }
+
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="spinnerone"></div>
+    <div class="spinnertwo"></div>
+    <div class="spinnerthree"></div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      width: 1000px;
+      background: grey;
+    }
+
+    .move {
+      width: 150px;
+      height: 50px;
+      background-color: red;
+      color: white;
+
+      font-size: 20px;
+      text-align: center;
+      margin: 20px 0;
+
+      line-height: 50px;
+      transition-property: transform;
+      transition-duration: 3s;
+    }
+
+    .container .move:hover {
+      transform: translate(850px);
+    }
+
+    #ease {
+      transition-timing-function: ease;
+    }
+
+    #easein {
+      transition-timing-function: ease-in;
+    }
+
+    #easeout {
+      transition-timing-function: ease-out;
+    }
+
+    #easeinout {
+      transition-timing-function: ease-in-out;
+    }
+
+    #linear {
+      transition-timing-function: linear;
+    }
+
+    #cubicbezier {
+      transition-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div id="ease" class="move">Ease</div>
+    </div>
+
+    <div class="container">
+      <div id="easein" class="move">Ease-In</div>
+    </div>
+
+    <div class="container">
+      <div id="easeout" class="move">Ease-out</div>
+    </div>
+
+    <div class="container">
+      <div id="easeinout" class="move">Ease-in-out</div>
+    </div>
+
+    <div class="container">
+      <div id="linear" class="move">Linear</div>
+    </div>
+
+    <div class="container">
+      <div id="cubicbezier" class="move">Cubic-bezier</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ButtonEffect</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style type="text/css">
+
+       body{
+        background-color: #000;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       }
+
+       .btn{
+        width: 300px;
+        height: 70px;
+
+        color: #fff;
+        font-size: 20px;
+
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        line-height: 70px;
+
+        position: relative;
+
+        transition: all .3s ;
+
+        
+        
+    }
+
+
+       .btn:hover{
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        overflow: hidden;
+       }
+
+       .btn:hover::before{
+          width: 70px;
+          border: 1px dashed rgba(255, 255, 255, 0.5);
+          animation-name: rotateleft;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+       }
+
+       .btn:hover::after{
+        width: 70px;
+        border: 1px dashed rgba(255, 255, 255, 0.5);
+        animation-name: rotateright;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+       }
+
+       @keyframes rotateleft{
+        from{
+          transform: rotate(0deg);
+        }
+
+        to{
+          transform: rotate(-360deg);
+        }
+
+    }
+
+    @keyframes rotateright{
+        from{
+            transform: rotate(0deg);
+        }
+
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+       .btn::before, .btn:after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(255,255, 255, 0.5);
+
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    span{
+        position: absolute;
+        
+        left: 30px;
+
+        transform: scale(0);
+        transition: all .3s ease-in;
+    }
+
+
+
+    .btn:hover span{
+        transform: scale(1);
+        animation-name: rotating;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes rotating{
+        0%{
+        transform: rotate(0deg);
+        }
+
+        50%{
+        transform: rotate(-360deg);
+        }
+
+        100%{
+        transform: rotate(1turn);
+        }
+    }
+ </style>
+
+        
+    
+</head>
+<body>
+
+    <a href="#" class="btn"><span><i class="fas fa-fan"></i></span>Hover Me</a>
+    
+</body>
+</html>

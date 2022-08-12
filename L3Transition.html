@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .div1 {
+      width: 290px;
+      height: 90px;
+      background: blue;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      line-height: 90px;
+
+      transition-property: background;
+      transition-duration: 3000ms;
+      
+    }
+
+    .div1:hover {
+      background: green;
+    }
+
+    .div2 {
+      width: 290px;
+      height: 90px;
+      background: blue;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      line-height: 90px;
+
+      transition-property: width, background, color;
+      transition-duration: 1000ms;
+    }
+
+    .div2:hover {
+      width: 500px;
+      color: black;
+      background: red;
+    }
+  </style>
+  <body>
+    <div class="div1">CSS Transition Div1</div>
+    <hr />
+    <div class="div2">CSS Transition Div2</div>
+    <hr />
+  </body>
+</html>
