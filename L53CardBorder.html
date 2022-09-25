@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Border Animation</title>
+
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+
+        background-color: #10131c;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #card {
+        overflow: hidden;
+        width: 200px;
+        height: 250px;
+        background-color: #212529;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      #card::before {
+        content: "";
+        position: absolute;
+        width: 450px;
+        height: 450px;
+
+        animation: rotation 3s linear infinite;
+        background-image: conic-gradient(
+          transparent,
+          transparent,
+          transparent,
+          #5621cf
+        );
+      }
+
+      #card::after {
+        content: "";
+        position: absolute;
+        width: 450px;
+        height: 450px;
+
+        animation: rotation 3s linear infinite;
+        animation-delay: 1.5s;
+        background-image: conic-gradient(
+          transparent,
+          transparent,
+          transparent,
+          red
+        );
+      }
+
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      #card > span {
+        background: #212529;
+        z-index: 99;
+        width: 97%;
+        height: 97%;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #c1c5c9;
+        font-size: 6rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+      <span>1</span>
+    </div>
+  </body>
+</html>
